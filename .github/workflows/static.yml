@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adexium Demo</title>
+</head>
+<body>
+    <h1>Adexium Реклама</h1>
+    <!-- Вставьте ваш виджет ниже -->
+    <script type="text/javascript" src="https://cdn.tgads.space/assets/js/tg-ads-co-widget.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const adexiumAds = new AdexiumWidget({
+               wid: '12c64168-5f22-459e-92b5-be84008a0d6c',
+               adFormat: 'push-like' // или 'interstitial'
+            });
+            adexiumAds.autoMode();
+        });
+    </script>
+</body>
+</html>
